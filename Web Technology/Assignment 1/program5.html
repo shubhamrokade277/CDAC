@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: rgb(248, 130, 169);
+        }
+
+        .abc {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <form>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="name" id="nm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Employee Code
+                </td>
+                <td>
+                    <input type="text" name="Ecode" id="ec">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Department
+                </td>
+                <td>
+
+                    <div class="abc">
+                        <input type="radio" name="Department" id="'admin">ADMIN
+                    </div>
+
+                    <div class="abc">
+                        <input type="radio" name="Department" id="'hr">HR
+                    </div>
+                    <div class="abc">
+                        <input type="radio" name="Department" id="'hr">TECHNICAL
+                    </div>
+                    <div class="abc">
+                        <input type="radio" name="Department" id="'tech">ACCOUNTS
+                    </div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    Date of Joining
+                </td>
+                <td>
+                    <input type="text" name="dd" id="dd" style="width: 20px;">/
+                    <input type="text" name="dd" id="dd" style="width: 20px;">/
+                    <input type="text" name="dd" id="dd" style="width: 20px;">/
+                    <br>dd &ensp; mm &ensp; yyyy
+                    <!-- <pre>dd    mm   yyyy</pre> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    <textarea name="Address" id="add" cols="30" rows="5"></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Training programs Attended</td>
+
+                <td>
+                    <div>
+                        <input type="checkbox" name="html" id="html">HTML/DHTML
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="java" id="java">JAVA
+
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="cserver" id="cserver">CLIENT/SERVER
+
+                    </div>
+                    <div>
+                        <input type="checkbox" name=".net" id=".net">
+                        .NET
+
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Training Programmes need to attend
+                </td>
+                <td>
+                    <select size="2">
+                        <option value="js">JAVASCRIPT</option>
+                        <option value="nodejs">NODE.JS</option>
+                        <option value="reactjs">REACT.JS</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Send the information at
+                </td>
+                <td>
+                    <a href="viraj@gmail.com">empinfo@patni.com</a>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>
