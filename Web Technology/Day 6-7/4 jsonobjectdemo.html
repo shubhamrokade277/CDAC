@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a={"pid":1,"pname":'sss'};
+    alert(a);  //[object Object]
+    console.log(a);  //{pid: 1, pname: 'sss'}
+
+    var jsonob=JSON.stringify(a);
+    alert(jsonob);  //{"pid":1,"pname":"sss"}
+    console.log(jsonob);  //{pid: 1, pname: 'sss'}
+
+    var b=JSON.parse(jsonob);
+    alert(b); //[object Object]
+
+    var arr=[{pid:111,pname:'xxxx'},{pid:222,pname:'xxxx'}];
+    localStorage.setItem("data",JSON.stringify(arr));
+    alert(localStorage.data);  //[{"pid":111,"pname":"xxxx"},{"pid":222,"pname":"xxxx"}]
+</script>
+</body>
+</html>

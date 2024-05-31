@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+
+</head>
+<body>
+    <p>This is body</p>
+</body>
+
+<script src="js/jquery-3.7.1.js"></script>
+    <script>
+        //console.log($);
+        $(document).ready(function(){
+            console.log("Doc Ready");
+
+            //$('p').hide(); //it will be hidden by default
+
+            $('p').click(function (){
+                console.log("Clicked p");
+                //$('p').hide(); //similar to this.hide
+                $(this).hide();
+            })
+        })
+    </script>
+
+</html>
